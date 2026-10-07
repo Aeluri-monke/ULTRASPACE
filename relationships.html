@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff4fa3">
+  <meta name="description" content="The DLS relationship chart, showing objective truth and what the cast thinks is happening.">
+  <title>DLS ★ Relationship Chart</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23ff4fa3'/%3E%3Cpath d='m32 7 6 18 19 .4-15.2 11.2 5.5 18.3L32 44 16.7 54.9l5.5-18.3L7 25.4l19-.4Z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="utility-strip"><span>★ FRIENDS NETWORK / PRIVATE ADMIN VIEW ★</span><span>arrows matter!!!</span></div>
+    <header class="site-banner subpage-banner relationship-banner">
+      <p class="banner-kicker">WHO LIKES WHOM, WHO KNOWS, WHO DOESN'T</p>
+      <h1>relationship chart</h1>
+      <p class="banner-subtitle">current feelings ≠ narrative destiny</p>
+    </header>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="./index.html">DLS Home</a><a href="./index.html#about">About the AU</a><a class="active" href="./relationships.html">Relationship Chart</a><a href="./profiles.html">UltraSpace Profiles</a><a href="./campus.html">U.A. Campus Archive</a>
+    </nav>
+    <main class="subpage-content">
+      <section class="relationship-controls">
+        <div><b>Display layer:</b><button class="layer-choice active" data-layer="reality" type="button">Objective truth</button><button class="layer-choice" data-layer="rumor" type="button">What people think</button></div>
+        <div><b>Connection:</b><button class="filter-choice active" data-filter="all" type="button">All</button><button class="filter-choice romance" data-filter="romance" type="button">Romance</button><button class="filter-choice platonic" data-filter="platonic" type="button">Platonic</button><button class="filter-choice former" data-filter="former" type="button">Former</button><button class="filter-choice friction" data-filter="friction" type="button">Friction</button></div>
+      <div><b>Focus:</b><select id="focus-select" aria-label="Focus on one character"><option value="">Everyone</option></select><button id="focus-clear" type="button">Clear focus</button></div></section>
+      <section class="relationship-board" id="relationship-board" aria-label="Clickable relationship network">
+        <svg id="relationship-lines" aria-hidden="true"></svg>
+        <div id="relationship-nodes" class="relationship-nodes"></div>
+      </section>
+      <p class="chart-help">Click a profile picture to open their UltraSpace page. On smaller screens, the ledger below is the readable version of the same chart.</p>
+      <section class="relationship-ledger" id="relationship-ledger"></section>
+      <section class="circle-ledger" id="circle-ledger"></section>
+    </main>
+    <footer class="site-footer"><p>DLS relationship chart // secrets included</p><p><a href="./index.html">home</a> · <a href="./profiles.html">profiles</a> · <a href="./campus.html">campus archive</a></p></footer>
+  </div>
+  <script src="./data.js"></script>
+  <script src="./relationships.js"></script>
+</body>
+</html>

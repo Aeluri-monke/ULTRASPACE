@@ -1,0 +1,6 @@
+Put character PNGs in this folder, then add their relative paths to data.js.
+
+Example:
+image: "./assets/patchwork.png"
+
+The site will automatically replace the initials placeholder with that image.

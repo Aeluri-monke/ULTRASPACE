@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff4fa3">
+  <meta name="description" content="Browse the recovered UltraSpace profiles in the Dirty Little Secrets archive.">
+  <title>UltraSpace ★ Browse Profiles</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23ff4fa3'/%3E%3Cpath d='m32 7 6 18 19 .4-15.2 11.2 5.5 18.3L32 44 16.7 54.9l5.5-18.3L7 25.4l19-.4Z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="utility-strip"><span>★ ULTRASPACE MEMBER DIRECTORY ★</span><span>32 recovered profiles</span></div>
+    <header class="site-banner subpage-banner">
+      <p class="banner-kicker">GO BEYOND YOUR SOCIAL CIRCLE</p>
+      <h1>UltraSpace</h1>
+      <p class="banner-subtitle">browse students, lurk respectfully, check the Top 8</p>
+    </header>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="./index.html">DLS Home</a><a href="./index.html#about">About the AU</a><a href="./relationships.html">Relationship Chart</a><a class="active" href="./profiles.html">UltraSpace Profiles</a><a href="./campus.html">U.A. Campus Archive</a>
+    </nav>
+    <main class="subpage-content">
+      <section class="directory-intro">
+        <span class="new-badge">NEW!</span>
+        <div><h2>Browse UltraSpace profiles</h2><p>Students only. Faculty members who claim to have profiles are almost certainly impersonators.</p></div>
+      </section>
+      <form class="directory-toolbar" role="search">
+        <label for="directory-search">Find somebody:</label>
+        <input id="directory-search" type="search" placeholder="name or username...">
+        <label><input id="online-only" type="checkbox"> online now only</label>
+        <span id="directory-count" aria-live="polite"></span>
+      </form>
+      <div class="profile-directory" id="profile-directory"></div>
+      <div class="directory-empty" id="directory-empty" hidden>No profiles matched. They may have changed their username out of embarrassment.</div>
+    </main>
+    <footer class="site-footer"><p>UltraSpace member directory // recovered fall 2006</p><p><a href="./index.html">home</a> · <a href="./relationships.html">friends network</a> · <a href="./campus.html">campus archive</a></p></footer>
+  </div>
+  <script src="./data.js"></script>
+  <script src="./directory.js"></script>
+</body>
+</html>
